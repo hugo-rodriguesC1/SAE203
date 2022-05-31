@@ -9,7 +9,7 @@ import ArtisteView from '../views/ArtisteView.vue'
 import MentionsView from '../views/MentionsView.vue'
 import AdminView from '../views/admin/AdminView.vue'
 import ListeArtistes from '../views/admin/ListeArtistes.vue'
-import ListePhotos from '../views/admin/ListePhotos.vue'
+import ListeConcert from '../views/admin/ListeConcert.vue'
 import CreateArtiste from '../views/admin/CreateArtiste.vue'
 import UpdateArtiste from '../views/admin/UpdateArtiste.vue'
 import DeleteArtiste from '../views/admin/DeleteArtiste.vue'
@@ -27,7 +27,7 @@ const router = createRouter({
     { path: '/mentions', name: 'MentionsView', component: MentionsView },
     { path: '/admin', name: 'AdminView', component: AdminView },
     { path: '/listea', name: 'ListeArtistes', component: ListeArtistes },
-    { path: '/listep', name: 'ListePhotos', component: ListePhotos },
+    { path: '/listec', name: 'ListeConcert', component: ListeConcert },
     { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
     { path: '/updateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/deleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtiste },

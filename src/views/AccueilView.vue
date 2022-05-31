@@ -1,7 +1,8 @@
 <template>
-  <main class="mx-6 sm:mx-32 md:mx-44 md:mt-6 lg:mx-64 lg:grid lg:grid-cols-2 lg:gap-40">
-    <img src="/HomeIllustration.svg" alt="ilustration aux couleurs du festival" class="mx-auto mt-6 md:w-full" />
-    <div>
+  <main class="mx-6 sm:mx-32 md:mx-44 md:mt-6 lg:mx-0 lg:grid lg:grid-cols-6 lg:gap-16">
+    <div class="col-span-1"></div>
+    <img src="/HomeIllustration.svg" alt="ilustration aux couleurs du festival" class="col-span-2 mx-auto mt-6 md:w-full" />
+    <div class="col-span-2">
       <h1 class="mt-6 hidden text-center font-barlow text-3xl font-bold uppercase lg:block">Blend Up</h1>
       <p class="mt-9 font-barlow text-sm font-normal">
         La première édition de Blend Up se tiendra à Paris les 8,9 et 10 juillet. Retrouvez ici la programmation du festival, les artistes

@@ -11,8 +11,8 @@
         </router-link>
       </div>
       <div class="mt-6 flex flex-row items-center justify-between">
-        <h2 class="font-barlow text-2xl font-bold uppercase">Photos</h2>
-        <router-link to="/listep">
+        <h2 class="font-barlow text-2xl font-bold uppercase">Concerts</h2>
+        <router-link to="/listec">
           <ButtonBlue />
         </router-link>
       </div>

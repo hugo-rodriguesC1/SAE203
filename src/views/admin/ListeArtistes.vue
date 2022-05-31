@@ -1,24 +1,40 @@
 <template>
   <main class="mx-6 bg-gray-100 sm:mx-32 md:mx-44 md:mb-20 md:mt-6 lg:m-0 lg:grid lg:grid-cols-6">
-    <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase lg:col-span-full">Artistes</h1>
+    <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase lg:col-span-full">Liste des Artistes</h1>
     <div class="col-span-1"></div>
-    <div
-      class="
-        mt-9
-        grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(140px,1fr))]
-        gap-x-11 gap-y-7
-        sm:grid-cols-[repeat(auto-fit,minmax(100px,1fr))]
-        md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:gap-5
-        lg:col-span-4
-      "
-    >
-      <div v-for="artiste in listeArtistes" :key="artiste.id" class="flex flex-col items-center">
-        <router-link :to="{ name: 'ArtisteView', params: { id: artiste.id } }"
-          ><img :src="artiste.img" :alt="artiste.nom" class="h-28 w-56 object-cover"
-        /></router-link>
-        <h2 class="font-barlow text-xl font-bold uppercase">{{ artiste.nom }}</h2>
-      </div>
-    </div>
+    <table class="col-span-4 mt-10 w-full">
+      <thead>
+        <tr>
+          <th colspan="3" class="relative bg-gray-300 py-2 text-center font-barlow text-2xl font-bold uppercase lg:col-span-full">
+            Liste des artistes
+            <span>
+              <router-link to="/createArtiste"><img src="/Icon/add.png" alt="ajouter" class="absolute top-2.5 right-3 w-7" /> </router-link>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Image</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Nom</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Actions</td>
+        </tr>
+        <tr v-for="artiste in listeArtistes" :key="artiste.id">
+          <td><img :src="artiste.img" :alt="artiste.nom" class="mx-auto h-36 w-56 object-cover py-4" /></td>
+          <td class="text-center">{{ artiste.nom }}</td>
+          <td>
+            <div class="flex flex-row justify-center gap-4">
+              <router-link :to="{ name: 'UpdateArtiste', params: { id: artiste.id } }"
+                ><img src="/Icon/update.png" alt="modifier" class="w-5"
+              /></router-link>
+              <router-link :to="{ name: 'DeleteArtiste', params: { id: artiste.id } }"
+                ><img src="/Icon/delete.png" alt="supprimer" class="w-6"
+              /></router-link>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </main>
 </template>
 

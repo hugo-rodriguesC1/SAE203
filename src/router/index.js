@@ -32,10 +32,7 @@ const router = createRouter({
     { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
     { path: '/updateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/deleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtiste },
-    { path: '/404', name: 'PageNotFound', component: PageNotFound },
-    { path: '/:pathMatch(.*)*', redirect: '/404' },
-
-    // ici les autre routes
+    { path: '/:pathMatch(.*)*', name: 'PageNotFound', component: PageNotFound },
   ]
 })
 

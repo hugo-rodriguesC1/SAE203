@@ -7,19 +7,19 @@
       <form class="mt-6 flex flex-col items-start gap-4">
         <div class="flex w-full flex-col items-start gap-3">
           <label for="nom" class="font-barlow text-xl font-bold uppercase">Nom</label>
-          <input type="text" name="nom" class="h-8 w-full border-[1px] border-solid border-gray-500" />
+          <input type="text" name="nom" class="h-8 w-full border-[1px] border-solid border-gray-500 dark:text-gray-900" />
         </div>
         <div class="flex w-full flex-col items-start gap-3">
           <label for="mail" class="font-barlow text-xl font-bold uppercase">Mail</label>
-          <input type="email" name="mail" class="h-8 w-full border-[1px] border-solid border-gray-500" />
+          <input type="email" name="mail" class="h-8 w-full border-[1px] border-solid border-gray-500 dark:text-gray-900" />
         </div>
         <div class="flex w-full flex-col items-start gap-3">
           <label for="sujet" class="font-barlow text-xl font-bold uppercase">Sujet</label>
-          <input type="text" name="sujet" class="h-8 w-full border-[1px] border-solid border-gray-500" />
+          <input type="text" name="sujet" class="h-8 w-full border-[1px] border-solid border-gray-500 dark:text-gray-900" />
         </div>
         <div class="flex w-full flex-col items-start gap-3">
           <label for="message" class="font-barlow text-xl font-bold uppercase">Message</label>
-          <input type="text" name="message" class="h-28 w-full border-[1px] border-solid border-gray-500" />
+          <input type="text" name="message" class="h-28 w-full border-[1px] border-solid border-gray-500 dark:text-gray-900" />
         </div>
         <button type="submit" class="btn-form">Envoyer</button>
       </form>

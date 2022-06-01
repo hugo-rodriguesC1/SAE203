@@ -67,10 +67,20 @@
         humour, or randomised words which don't look even slightly believable.
       </p>
     </div>
+    <h2 class="mt-4 mb-3 ml-3 text-xl text-gray-600 dark:text-gray-300">Composants</h2>
+    <div class="flex flex-row gap-10">
+      <div class="w-40">
+        <concert-card blue="400" horaire="20h00-20h30" session="1" />
+      </div>
+      <div class="w-40">
+        <concert-card blue="800" horaire="20h00-20h45" session="3" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script >
+import ConcertCard from "../components/ConcertCard.vue";
 import Couleur from "../components/styleguide/Couleur.vue";
 import CouleurSmall from "../components/styleguide/CouleurSmall.vue";
 export default {
@@ -78,6 +88,7 @@ export default {
   components: {
     Couleur,
     CouleurSmall,
+    ConcertCard,
   },
 };
 </script>

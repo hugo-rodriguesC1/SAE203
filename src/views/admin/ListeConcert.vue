@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-6 mb-40 bg-gray-100 sm:mx-32 md:mx-44 md:mb-20 md:mt-6 lg:m-0 lg:mb-28 lg:grid lg:grid-cols-6">
+  <main class="mx-6 mb-40 sm:mx-32 md:mx-44 md:mb-20 md:mt-6 lg:m-0 lg:mb-28 lg:grid lg:grid-cols-6">
     <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase lg:col-span-full">Liste des Artistes</h1>
     <div class="col-span-1"></div>
     <form class="col-span-4 mt-10">
@@ -17,7 +17,10 @@
     <table class="col-span-4 mb-12 mt-10 w-full">
       <thead>
         <tr>
-          <th colspan="3" class="relative bg-gray-300 py-2 text-center font-barlow text-2xl font-bold uppercase lg:col-span-full">
+          <th
+            colspan="3"
+            class="relative bg-gray-300 py-2 text-center font-barlow text-2xl font-bold uppercase dark:bg-gray-700 lg:col-span-full"
+          >
             Liste des Co
             <span>
               <router-link to="/createArtiste"><img src="/Icon/add.png" alt="ajouter" class="absolute top-2.5 right-3 w-7" /> </router-link>
@@ -27,13 +30,17 @@
       </thead>
       <tbody>
         <tr>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Session</td>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Horaire</td>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Actions</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Session</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Horaire</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Actions</td>
         </tr>
         <tr v-for="concert in listeConcert" :key="concert.id">
-          <td class="text-center"><input type="text" name="session" v-model="concert.session" required class="w-full pl-2" /></td>
-          <td class="text-center"><input type="text" name="horaire" v-model="concert.horaire" required class="w-full pl-2" /></td>
+          <td class="text-center">
+            <input type="text" name="session" v-model="concert.session" required class="w-full pl-2 dark:bg-gray-900" />
+          </td>
+          <td class="text-center">
+            <input type="text" name="horaire" v-model="concert.horaire" required class="w-full pl-2 dark:bg-gray-900" />
+          </td>
           <td>
             <div class="flex flex-row justify-center gap-4">
               <button type="button" @click="updateConcert(concert)"><img src="/Icon/update.png" alt="modifier" class="w-6" /></button>

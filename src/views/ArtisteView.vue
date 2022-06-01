@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-6 bg-gray-100 sm:mx-32 sm:mb-56 md:mx-44 md:mt-6 lg:m-0 lg:mt-10 lg:grid lg:grid-cols-6">
+  <main class="mx-6 sm:mx-32 sm:mb-56 md:mx-44 md:mt-6 lg:m-0 lg:mt-10 lg:grid lg:grid-cols-6">
     <div class="col-span-2"></div>
     <div class="col-span-2">
       <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase">{{ artiste.nom }}</h1>

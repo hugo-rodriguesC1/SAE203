@@ -14,6 +14,7 @@ import CreateArtiste from '../views/admin/CreateArtiste.vue'
 import UpdateArtiste from '../views/admin/UpdateArtiste.vue'
 import DeleteArtiste from '../views/admin/DeleteArtiste.vue'
 import PageNotFound from '../views/PageNotFound.vue'
+import StyleGuide from '../views/StyleGuide.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,7 @@ const router = createRouter({
     { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
     { path: '/updateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/deleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtiste },
+    { path: '/style-guide', name: 'StyleGuide', component: StyleGuide },
     { path: '/:pathMatch(.*)*', name: 'PageNotFound', component: PageNotFound },
   ]
 })

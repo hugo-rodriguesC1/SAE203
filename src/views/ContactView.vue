@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-6 bg-gray-100 sm:mx-32 md:mx-44 md:mt-6 md:mb-24 lg:m-0 lg:grid lg:grid-cols-6">
+  <main class="mx-6 sm:mx-32 md:mx-44 md:mt-6 md:mb-24 lg:m-0 lg:grid lg:grid-cols-6">
     <div class="col-span-2"></div>
     <div class="col-span-2">
       <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase">Contact</h1>
@@ -21,7 +21,7 @@
           <label for="message" class="font-barlow text-xl font-bold uppercase">Message</label>
           <input type="text" name="message" class="h-28 w-full border-[1px] border-solid border-gray-500" />
         </div>
-        <button type="submit" class="self-end bg-gray-900 px-7 py-1 font-barlow text-lg font-bold uppercase text-gray-100">Envoyer</button>
+        <button type="submit" class="btn-form">Envoyer</button>
       </form>
       <h2 class="mt-6 font-barlow text-2xl font-bold uppercase">Carte</h2>
       <iframe

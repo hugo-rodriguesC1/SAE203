@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-6 bg-gray-100 sm:mx-32 sm:mb-80 md:mx-44 md:mt-6 lg:m-0 lg:mt-40 lg:grid lg:grid-cols-6">
+  <main class="mx-6 sm:mx-32 sm:mb-80 md:mx-44 md:mt-6 lg:m-0 lg:mt-40 lg:grid lg:grid-cols-6">
     <div class="col-span-1"></div>
     <div class="col-span-2 hidden lg:block">
       <img src="/Concert/concert.png" alt="photo de concert" class="w-full" />

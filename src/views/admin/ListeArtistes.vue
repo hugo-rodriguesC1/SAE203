@@ -1,11 +1,14 @@
 <template>
-  <main class="mx-6 bg-gray-100 sm:mx-32 md:mx-44 md:mb-20 md:mt-6 lg:m-0 lg:grid lg:grid-cols-6">
+  <main class="mx-6 sm:mx-32 md:mx-44 md:mb-20 md:mt-6 lg:m-0 lg:grid lg:grid-cols-6">
     <h1 class="mt-6 text-center font-barlow text-3xl font-bold uppercase lg:col-span-full">Liste des Artistes</h1>
     <div class="col-span-1"></div>
     <table class="col-span-4 mt-10 w-full">
       <thead>
         <tr>
-          <th colspan="3" class="relative bg-gray-300 py-2 text-center font-barlow text-2xl font-bold uppercase lg:col-span-full">
+          <th
+            colspan="3"
+            class="relative bg-gray-300 py-2 text-center font-barlow text-2xl font-bold uppercase dark:bg-gray-700 lg:col-span-full"
+          >
             Liste des artistes
             <span>
               <router-link to="/createArtiste"><img src="/Icon/add.png" alt="ajouter" class="absolute top-2.5 right-3 w-7" /> </router-link>
@@ -15,9 +18,9 @@
       </thead>
       <tbody>
         <tr>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Image</td>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Nom</td>
-          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase lg:col-span-full">Actions</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Image</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Nom</td>
+          <td class="bg-gray-200 text-center font-barlow text-xl font-bold uppercase dark:bg-gray-500 lg:col-span-full">Actions</td>
         </tr>
         <tr v-for="artiste in listeArtistes" :key="artiste.id">
           <td><img :src="artiste.img" :alt="artiste.nom" class="mx-auto h-36 w-56 object-cover py-4" /></td>
